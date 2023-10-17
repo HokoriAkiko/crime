@@ -1,0 +1,60 @@
+.box_to_hold_everything {
+    display: flex;
+    flex-direction: row;
+}
+
+.box_to_hold_center_side {
+    width: 80%;
+    padding: 10px;
+    border-left: 2px dashed rgba(150,150,150,0.5);
+    border-right: 2px dashed rgba(150,150,150,0.5);
+    margin-left: 5px;
+}
+
+.box_to_hold_graph_and_related_content {
+    display: flex;
+    flex-direction: column;
+    overflow-x: scroll;
+    border-bottom: 3px solid rgba(150,150,150,0.25);
+    margin-bottom: 50px;
+    padding-bottom: 25px;
+}
+
+.box_to_hold_each_graph {}
+
+.box_to_hold_current_graph_conditions_title {
+    padding-left: 20px;
+    color: blueviolet;
+    font-size: 20px;
+    font-style: bold;
+    letter-spacing: 1px;
+    padding-top: 10px;
+}
+
+.box_to_hold_label_color_list {
+    border-left: 2px ridge green;
+    border-bottom-left-radius: 10px;
+}
+
+.box_to_hold_label_color_each {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-top: 2.5px;
+    padding-bottom: 2.5px;
+}
+
+.box_to_hold_label_index {
+    font-size: 12px;
+     margin-left: 4px;
+    width: 20px;
+}
+
+.box_to_hold_label_respective_color {}
+
+.box_to_hold_label_text {
+    font-size: 14px;
+    color: black;
+    font-style: italic;
+    padding-left: 4px;
+}

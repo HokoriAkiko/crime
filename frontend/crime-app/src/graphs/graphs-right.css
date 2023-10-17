@@ -1,0 +1,9 @@
+.box_to_hold_right_side {
+    width: 20%;
+    position: sticky;
+    top: 0px;
+    right: 0px;
+}
+
+.box_to_hold_ref_list {
+}
