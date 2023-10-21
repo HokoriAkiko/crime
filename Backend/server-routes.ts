@@ -15,6 +15,7 @@ const init_routes = (app: Express) => {
     app.post('/filter_data_using_words', filter_data_using_words, error_handler);
 
     app.post('/fetch_graphs', fetch_graphs, error_handler);
+
 };
 
 export default init_routes;

@@ -1,13 +1,15 @@
 import { useCallback, useEffect, useState } from "react"
 import Home from "./home/home"
 import GraphsView from "./graphs/graphs-view";
+import SearchWordGraph from "./Search-Word-Graph";
 
 
 const fetch_screen = (name: string, properties: any) => {
 
     const get_screen: any = {
         home: Home,
-        'graphs-view': GraphsView
+        'graphs-view': GraphsView,
+        'search-word-graph': SearchWordGraph
     };
 
     if (!!get_screen[name]) {
@@ -19,7 +21,7 @@ const fetch_screen = (name: string, properties: any) => {
 }
 
 const ScreenHandler = (props: any) => {
-    const [screen_data, set_screen_data] = useState<any>({ name: 'home' })
+    const [screen_data, set_screen_data] = useState<any>({ name: 'search-word-graph' })
 
     const switch_screen = (screen_name: string, parse_data?: any) => {
         let to_pass = { switch_screen };
@@ -28,7 +30,7 @@ const ScreenHandler = (props: any) => {
         set_screen_data({ name: screen_name, component: res });
     }
 
-    return <>{screen_data?.component ? screen_data.component : switch_screen('home')}</>
+    return <>{screen_data?.component ? screen_data.component : switch_screen('search-word-graph')}</>
 };
 
 export default ScreenHandler;
